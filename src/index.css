@@ -1,9 +1,0 @@
-/* overflow-y-scroll h-full w-full flex flex-col */
-draggable-child-wrapper {
-  height: 100%;
-  width: 100%;
-  flex: auto;
-  flex-direction: column;
-  overflow-y: scroll;
-  flex-direction: column;
-}

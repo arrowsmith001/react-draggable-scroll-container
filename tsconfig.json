@@ -3,7 +3,8 @@
         "target": "es5",
         "module": "commonjs",
         "jsx": "react",
-        "outDir": "./dist",
+        "outDir": "dist",
+        "declaration": true,
         "strict": true,
         "moduleResolution": "node",
         "esModuleInterop": true,
@@ -11,8 +12,7 @@
         "forceConsistentCasingInFileNames": true
     },
     "include": [
-        "src/**/*.ts",
-        "src/**/*.tsx"
+        "src/**/*"
     ],
     "exclude": [
         "node_modules"

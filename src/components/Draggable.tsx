@@ -8,7 +8,7 @@ interface DraggableProps {
     scrollSizeFactor?: number;
 }
 
-export interface DragInfo {
+interface DragInfo {
     scrollY: number;
 }
 
@@ -103,7 +103,13 @@ const Draggable: React.FC<DraggableProps> = ({ children, setScroll, setScrollPer
         <div
             ref={scrollRef}
             onDrag={(e) => { e.preventDefault(); }} onDragStart={(e) => { e.preventDefault(); }} draggable={false}
-            className={'draggable-child-wrapper'}
+            style={{
+                'height': '100%',
+                'width': '100%',
+                'flex': 'auto',
+                'flexDirection': 'column',
+                'overflowY': 'scroll',
+            }}
             onMouseDown={onMouseDown}
         >
             {children}
